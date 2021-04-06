@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+body {
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #f2f2f2; }
+
+.container {
+  max-width: 925px;
+  margin: 0 auto;
+  padding: 0 2em; }
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .cards .item {
+    color: rgba(255, 255, 255, 0.75);
+    padding: 3em; }
+    .cards .item.c1 {
+      background-color: #e38826;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px; }
+      .cards .item.c1 a.btn {
+        color: #e38826; }
+    .cards .item.c2 {
+      background-color: #006970; }
+      .cards .item.c2 a.btn {
+        color: #006970; }
+    .cards .item.c3 {
+      background-color: #004241;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px; }
+      .cards .item.c3 a.btn {
+        color: #004241; }
+    .cards .item .icon {
+      margin-bottom: 2em; }
+    .cards .item h2.title {
+      font-family: 'Big Shoulders Display', cursive;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: white; }
+    .cards .item p.desc {
+      line-height: 1.70rem; }
+
+a.btn {
+  background-color: white;
+  padding: .7em 1.5em;
+  border-radius: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 2em;
+  border: 2px solid transparent; }
+  a.btn:hover {
+    border: 2px solid white;
+    color: white !important;
+    background-color: transparent; }
+
+@media (min-width: 1440px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .container {
+    padding: 0 0em; }
+  .cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .cards .item.c1 {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 6px; }
+    .cards .item.c3 {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 6px;
+      border-top-right-radius: 6px; }
+  a.btn {
+    margin-top: 5em; } }

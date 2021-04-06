@@ -1,0 +1,39 @@
+include _vars.pug
+include _mixins.pug
+
+- var title = 'Frontend Mentor | 3-column preview card component'
+- var desc = ''
+- var metatitle = ''
+- var keywords = ''
+- var metaImage = ''
+- var ogImage = metaImage
+- var twitterImage = metaImage
+
+doctype html
+html(lang=lang)
+    include _head.pug
+
+    body 
+        main#page
+            .container 
+                .cards 
+                    .item.c1
+                        .icon
+                            img(src="images/icon-sedans.svg", alt="Sedans")
+                        h2.title Sedands 
+                        p.desc Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.
+                        a.btn(href="#") Learn More
+                    
+                    .item.c2
+                        .icon
+                            img(src="images/icon-suvs.svg", alt="SUVs")
+                        h2.title SUVs
+                        p.desc Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.
+                        a.btn(href="#") Learn More
+                    
+                    .item.c3
+                        .icon
+                            img(src="images/icon-luxury.svg", alt="Luxury")
+                        h2.title Luxury 
+                        p.desc Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.
+                        a.btn(href="#") Learn More
